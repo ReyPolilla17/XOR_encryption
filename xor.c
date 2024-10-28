@@ -1,8 +1,7 @@
 /**
  * @file cifrdo_xor.c
  * 
- * @brief (quizá en un futuro lo divida en más archivos, depende de que tan complejo se ponga)
- * Este archivo contiene un programa capaz de codificar y decodificar mensajes usando el cifrado XOR
+ * @brief Este archivo contiene un programa capaz de codificar y decodificar mensajes usando el cifrado XOR
  * 
  * Dicho cifrado requiere de un mensaje y de una clave, en cada caracter del mensaje, usará cada caracter de la clave,
  * si la clave es más corta que el mensaje, repetirá la clave para cubrir todo el mensaje.
@@ -16,9 +15,6 @@
  * ignorar los saltos de linea de la clave resultará en que cada linea del mensaje se decodificará con cada línea de la
  * clave, ignorar los saltos de línea para el archivo hará que cada linea uneva se interprete como un mensaje nuevo,
  * haciendo que la clave se vuelva a iniciar con cada línea nueva.
- * 
- * El programa fue desarrollado con ciertas limitaciones por cuestión de tiempo, por lo que ahora mismo se está trabajando
- * en modificar la mayoría de sus funcionalidades.
  * 
  * @author Polilla
  * 
@@ -41,6 +37,22 @@ int main(int argc, char *argv[])
     clave = NULL;
     mensaje = NULL;
     res = NULL;
+
+    /**
+     * Menu para cargar las cosas?
+     * 1 cargar mensaje de un archivo
+     * 2 introducir un mensaje
+     * 3 cargar una o más claves de un archivo
+     * 4 introducir una clave
+     * 5 visualizar mensaje
+     * 6 visualizar claves
+     * 7 decodificar mensaje
+     * 8 guardar mensaje decodificado
+     */
+
+    /**
+     * Traduce esta madre mijo, nadie habla español
+     */
 
     // en caos de que algun argumento no sea valido
     if(ar < 0)
